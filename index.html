@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>FiveBerg Presentation</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link
+      rel="stylesheet"
+      href="plugin/highlight/monokai.css"
+      id="highlight-theme"
+    />
+    <style>
+      #myImg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      #myImg:hover {
+        opacity: 0.7;
+      }
+
+      /* The Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+      }
+
+      /* Modal Content (image) */
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+      }
+
+      /* Caption of Modal Image */
+      #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+      }
+
+      /* Add Animation */
+      .modal-content,
+      #caption {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+      }
+
+      @-webkit-keyframes zoom {
+        from {
+          -webkit-transform: scale(0);
+        }
+        to {
+          -webkit-transform: scale(1);
+        }
+      }
+
+      @keyframes zoom {
+        from {
+          transform: scale(0);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+
+      /* The Close Button */
+      .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      /* 100% Image Width on Smaller Screens */
+      @media only screen and (max-width: 700px) {
+        .modal-content {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div
+      class="reveal"
+      style="background-image: url('images/nightskyblack1.jpg');"
+    >
+      <div class="slides">
+        <section data-state="make-it-pop" data-transition="convex">
+          <img src="images/logo_skyblue.png" alt="Team Logo" />
+          <p>
+            <small><a href="https://www.fiveberg.de/">FiveBerg</a> </small>
+          </p>
+        </section>
+
+        <section>
+          <h4 style="font-weight: bold;">Who we are?</h4>
+          <section data-state="make-it-pop" data-transition="convex">
+            <video src="videos/Introvideo.mp4" controls></video>
+          </section>
+          <section
+            class="fragments"
+            data-background-image="images/nightsky.lpg"
+          >
+            <h4>Present You</h4>
+            <img
+              class="fragment"
+              src="images/logo_skyblue.png"
+              alt="Team Logo"
+            />
+            <p>
+              <small class="fragment"
+                ><a href="https://www.fiveberg.de/">FiveBerg</a></small
+              >
+            </p>
+          </section>
+          <!-- <section>
+            <h4>Our Values</h4>
+          </section>
+          <section>
+            <span class="material-icons" style="font-size: 10rem;">
+              alt_route
+            </span>
+
+            <h5>Adaptable</h5>
+          </section>
+          <section>
+            <span class="material-icons" style="font-size: 10rem;">
+              home_repair_service
+            </span>
+            <h5>High Professional Standard</h5>
+          </section>
+          <section>
+            <span class="material-icons" style="font-size: 10rem;">
+              settings_applications
+            </span>
+            <h5>Integrable</h5>
+          </section>
+          <section>
+            <span class="material-icons" style="font-size: 10rem;">
+              wb_incandescent
+            </span>
+            <h5>Simplicity</h5>
+          </section>
+          <section>
+            <span class="material-icons" style="font-size: 10rem;">
+              search
+            </span>
+            <h5>Transparent</h5>
+          </section> -->
+          <section>
+            <h4 style="font-weight: bold;">Our vision</h4>
+            <blockquote>
+              &ldquo;We aim to be the pioneers that help businesses to grow by
+              adopting a first-principles approach to analyse and produce a
+              solution.&rdquo;
+            </blockquote>
+          </section>
+        </section>
+        <section>
+          <h4 style="font-weight: bold;">Our services</h4>
+
+          <section class="fragments">
+            <div class="r-hstack justify-center">
+              <div
+                class="fragment"
+                id="Apps"
+                style="
+                  width: 24rem;
+
+                  margin: 10px;
+
+                  color: #fff;
+                  padding: 10px;
+
+                  text-align: center;
+                "
+              >
+                <span class="material-icons" style="font-size: 4rem;">
+                  apps
+                </span>
+                <h4 style="color: #fff;">App development</h4>
+              </div>
+
+              <div
+                id="ui"
+                class="fragment"
+                style="
+                  width: 15rem;
+
+                  margin: 10px;
+
+                  color: #fff;
+                  padding: 10px;
+
+                  text-align: center;
+                "
+              >
+                <span class="material-icons" style="font-size: 4rem;">
+                  thumb_up
+                </span>
+                <h4 style="color: #fff;">Easy to use</h4>
+              </div>
+              <div
+                id="time"
+                class="fragment"
+                style="
+                  width: 24rem;
+
+                  margin: 10px;
+
+                  color: #fff;
+                  padding: 10px;
+
+                  text-align: center;
+                "
+              >
+                <span class="material-icons" style="font-size: 4rem;">
+                  watch_later
+                </span>
+                <h4 style="color: #fff;">Real time update</h4>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="r-hstack justify-center">
+              <div
+                class="fragment"
+                style="
+                  width: 20rem;
+
+                  margin: 10px;
+
+                  color: #fff;
+                  padding: 10px;
+
+                  text-align: center;
+                "
+              >
+                <span class="material-icons" style="font-size: 4rem;">
+                  settings
+                </span>
+                <h4 style="color: #fff;">Customization</h4>
+              </div>
+
+              <div
+                class="fragment"
+                style="
+                  width: 20rem;
+
+                  margin: 10px;
+
+                  color: #fff;
+                  padding: 10px;
+
+                  text-align: center;
+                "
+              >
+                <span class="material-icons" style="font-size: 4rem;">
+                  language
+                </span>
+                <h4 style="color: #fff;">Anytime anywhere</h4>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section>
+          <h4 style="font-weight: bold;">Our current project</h4>
+          <section class="fragments">
+            <div class="fragment">
+              <h4>News App</h4>
+            </div>
+          </section>
+          <section
+            class="fragments"
+            data-auto-animate
+            data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)"
+          >
+            <div>
+              <h4>Problem we are trying to solve?</h4>
+            </div>
+            <div class="fragment">
+              <h4>
+                Publishing industies losing digital subscribers every year.
+              </h4>
+            </div>
+          </section>
+
+          <section
+            data-auto-animate
+            data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)"
+          >
+            <div class="r-hstack justify-center">
+              <div
+                data-id="box1"
+                style="
+                  position: absolute;
+
+                  width: 120px;
+                  height: 100px;
+                  margin: 0 auto;
+                "
+              ></div>
+              <div
+                data-id="box2"
+                style="
+                  position: absolute;
+
+                  width: 120px;
+                  height: 100px;
+                  margin: 0 auto;
+                "
+              ></div>
+              <div
+                data-id="box3"
+                style="
+                  position: absolute;
+
+                  width: 120px;
+                  height: 100px;
+                  margin: 0 auto;
+                "
+              ></div>
+              <div
+                data-id="box4"
+                style="
+                  position: absolute;
+
+                  width: 120px;
+                  height: 100px;
+                  margin: 0 auto;
+                "
+              ></div>
+              <div
+                data-id="box5"
+                style="
+                  position: absolute;
+
+                  width: 120px;
+                  height: 100px;
+                  margin: 0 auto;
+                "
+              ></div>
+              <div
+                data-id=""
+                style="
+                  position: absolute;
+                  background: transparent;
+                  width: 150px;
+                  height: 100px;
+                  margin: 0 auto;
+
+                  border-radius: 5px;
+                "
+              >
+                <h5 style="margin: 0 auto;">
+                  Why?
+                </h5>
+              </div>
+            </div>
+          </section>
+
+          <section
+            data-auto-animate
+            data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)"
+          >
+            <div class="h-stack">
+              <div
+                data-id="box1"
+                data-auto-animate-delay="0"
+                style="
+                  position: relative;
+
+                  width: 150px;
+                  height: 100px;
+                  margin-right: 50px;
+                  float: left;
+                "
+              >
+                <img
+                  src="images/facebook.png"
+                  alt="Social media"
+                  style="object-fit: cover;"
+                />
+                <h5 style="font-size: 1.6rem;">Social media</h5>
+              </div>
+              <div
+                data-id="box2"
+                data-auto-animate-delay="0"
+                style="
+                  position: relative;
+
+                  width: 150px;
+                  height: 100px;
+                  margin-left: 50px;
+                  float: right;
+                "
+              >
+                <img
+                  src="images/apps.png"
+                  alt="User Interface"
+                  style="object-fit: cover;"
+                />
+                <h5 style="font-size: 1.6rem;">User interface</h5>
+              </div>
+              <div
+                data-id="box3"
+                data-auto-animate-delay="0.1"
+                style="
+                  position: relative;
+
+                  width: 150px;
+                  height: 100px;
+                  margin-left: 30px;
+
+                  float: right;
+                "
+              >
+                <img
+                  src="images/search.png"
+                  alt="Authenticate"
+                  style="object-fit: cover;"
+                />
+                <h5 style="font-size: 1.6rem;">Content Authentication</h5>
+              </div>
+
+              <div
+                data-id="box5"
+                data-auto-animate-delay="0.1"
+                style="
+                  position: relative;
+                  width: 150px;
+                  height: 100px;
+                  margin-right: 30px;
+
+                  float: left;
+                "
+              >
+                <img
+                  src="images/stats.png"
+                  alt="Business"
+                  style="object-fit: cover;"
+                />
+                <h5 style="font-size: 1.6rem;">Market value</h5>
+              </div>
+
+              <div
+                data-id=""
+                style="
+                  width: 150px;
+                  height: 100px;
+                  margin: 0 auto;
+                  border-radius: 50%;
+                "
+              >
+                <h5 style="margin: 0 auto;">
+                  Why?
+                </h5>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h4 style="font-size: 2rem;">Our solution</h4>
+            <video src="videos/product.mp4" controls></video>
+          </section>
+        </section>
+        <section>
+          <h4 style="font-weight: bold;">Market analysis</h4>
+          <section>
+            <iframe
+              src="//datawrapper.dwcdn.net/khJm7/2/"
+              frameborder="0"
+              allowtransparency="true"
+              allowfullscreen
+              webkitallowfullscreen
+              mozallowfullscreen
+              oallowfullscreen
+              msallowfullscreen
+              width="900"
+              height="500"
+              style="background-color: #fff; padding: 5px;"
+            ></iframe>
+          </section>
+          <section>
+            <iframe
+              src="//datawrapper.dwcdn.net/yuJkz/2/"
+              frameborder="0"
+              allowtransparency="true"
+              allowfullscreen
+              webkitallowfullscreen
+              mozallowfullscreen
+              oallowfullscreen
+              msallowfullscreen
+              width="900"
+              height="500"
+              style="background-color: #fff; padding: 5px;"
+            ></iframe>
+          </section>
+          <section>
+            <img src="images/turnover.PNG" alt="Market analysis" />
+          </section>
+          <section>
+            <h4>Competitors</h4>
+            <div style="display: flex; justify-content: space-evenly;">
+              <img
+                src="https://static1.squarespace.com/static/56cb59a7b6aa60407590bc11/t/5dfa13dd833c9f2038a547bc/1592901048105/"
+                alt="United Robots"
+                style="width: 12rem; height: 10rem; background-color: #3d3d3d;"
+              />
+              <img
+                src="https://partechpartners.com/media/images/aiden-logo-web.original.png"
+                alt="aiden"
+                style="width: 12rem; height: 10rem; background-color: #8efaf5;"
+              />
+              <img
+                src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_bb8e149136897b75953f76dee652fcda/attest.png"
+                alt="Attest"
+                style="width: 12rem; height: 10rem; background-color: #ccc;"
+              />
+              <img
+                src="https://wearehearken.com/wp-content/uploads/2020/06/HK_logoMark_horizon_bw.png"
+                alt="Hearken"
+                style="width: 12rem; height: 10rem; background-color: #ccc;"
+              />
+            </div>
+            <div style="display: flex; justify-content: space-evenly;">
+              <img
+                src="images/zencastr.png"
+                alt="Zencastr"
+                style="width: 12rem; height: 10rem; background-color: #fff;"
+              /><img
+                src="images/felix.png"
+                alt="felix"
+                style="width: 12rem; height: 10rem; background-color: #000;"
+              />
+            </div>
+          </section>
+        </section>
+        <section>
+          <h4 style="font-weight: bold;">Value proposition</h4>
+          <img
+            src="images/Value+Proposition+Canvas.png"
+            alt="Value Proposition"
+          />
+        </section>
+
+        <section>
+          <h4 style="font-weight: bold;">User feedback</h4>
+          <section>
+            <div>
+              <img src="images/jotform1.png" alt="" />
+              <img src="images/jotform2.png" alt="" />
+            </div>
+          </section>
+          <section>
+            <div style="display: flex;">
+              <div>
+                <h4 style="font-size: 1.5rem;">
+                  Would you like to listen to your news instead of reading them?
+                </h4>
+                <div id="piechart1"></div>
+              </div>
+              <div>
+                <h4 style="font-size: 1.5rem;">
+                  How about having the liberty to read news articles without
+                  internet?
+                </h4>
+                <div id="piechart2"></div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div style="display: flex;">
+              <div>
+                <h4 style="font-size: 1.5rem;">
+                  How about consuming news through a cool interactive game and
+                  win some amazing rewards?
+                </h4>
+                <div id="piechart3"></div>
+              </div>
+              <div>
+                <h4 style="font-size: 1.5rem;">
+                  Would you prefer to have a personalized news application?
+                </h4>
+                <div id="piechart4"></div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section>
+          <h4 style="font-weight: bold;">Vendor visit</h4>
+          <section>
+            <h4 style="font-size: 1.5rem; color: #4ad295; font-weight: bold;">
+              Deichmann
+            </h4>
+            <img
+              src="images/deichmann.jpg"
+              style="width: 20rem; height: 30rem; margin-right: 3rem;"
+              alt="deichmann"
+            />
+            <img
+              src="images/deichmannFeedback.jpg"
+              style="width: 20rem; height: 30rem;"
+              alt="deichmann feedback"
+              id="myImg"
+            />
+
+            <div id="myModal" class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="img01" />
+              <div id="caption"></div>
+            </div>
+          </section>
+          <section>
+            <h4 style="font-size: 1.5rem; color: #4ad295; font-weight: bold;">
+              Bollywood grocery store
+            </h4>
+            <img
+              src="images/bollywood.jpg"
+              style="width: 30rem; height: 30rem; margin-right: 3rem;"
+              alt="deichmann"
+            />
+            <img
+              src="images/bollywoodFeedback.jpg"
+              style="width: 20rem; height: 30rem;"
+              alt="bollywood feedback"
+              id="myImg2"
+            />
+          </section>
+        </section>
+        <!-- <section>
+          <h4 style="font-weight: bold;">Financial plan</h4>
+          <section>
+            <table style="font-size: 21px;">
+              <thead>
+                <tr>
+                  <th>Particulars</th>
+                  <th>Unit</th>
+                  <th>2020-21</th>
+                  <th>2020-22</th>
+                  <th>2020-23</th>
+                  <th>2020-24</th>
+                  <th>2020-25</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>New Subscribers</td>
+                  <td>-</td>
+                  <td>5000</td>
+                  <td>15,000</td>
+                  <td>35,000</td>
+                  <td>90,000</td>
+                  <td>150,000</td>
+                </tr>
+                <tr>
+                  <td>Total Revenue</td>
+                  <td>Euros(€)</td>
+                  <td>500,000</td>
+                  <td>1,500,000</td>
+                  <td>3,500,000</td>
+                  <td>9,000,000</td>
+                  <td>15,000,000</td>
+                </tr>
+                <tr>
+                  <td>% Revenue Share</td>
+                  <td>%</td>
+                  <td>20</td>
+                  <td>20</td>
+                  <td>20</td>
+                  <td>20</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>Fiveberg Annual Revenue (Approx)</td>
+                  <td>Euros(€)</td>
+                  <td>100,000</td>
+                  <td>300,000</td>
+                  <td>700,000</td>
+                  <td>1.800,000</td>
+                  <td>3,000,000</td>
+                </tr>
+                <tr>
+                  <td>Customer Revenue (Approx)</td>
+                  <td>Euros(€)</td>
+                  <td>400,000</td>
+                  <td>1,200,000</td>
+                  <td>2,800,000</td>
+                  <td>7.200,000</td>
+                  <td>12,000,000</td>
+                </tr>
+                <tr>
+                  <td>Fiveberg Annual (Approx)</td>
+                  <td>Euros(€)</td>
+                  <td>235,000</td>
+                  <td>434,500</td>
+                  <td>671,550</td>
+                  <td>951,665</td>
+                  <td>1,281,088</td>
+                </tr>
+                <tr>
+                  <td>Fiveberg Annual Profit</td>
+                  <td>Euros(€)</td>
+                  <td>-135,000</td>
+                  <td>-134,500</td>
+                  <td>28,450</td>
+                  <td>848,335</td>
+                  <td>1,718,913</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </section> -->
+        <section
+          data-background-video="videos/marketing.mp4"
+          data-background-video-muted
+          data-background-interactive
+        >
+          <div style="height: 600px;">
+            <div
+              style="
+                position: absolute;
+                width: 40%;
+                right: 0;
+                top: 6rem;
+                box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5),
+                  0 5px 25px rgba(0, 0, 0, 0.2);
+                background-color: rgba(0, 0, 0, 0.9);
+                color: #fff;
+                padding: 20px;
+                font-size: 20px;
+                text-align: left;
+              "
+            >
+              <h2>Marketing</h2>
+              <p>
+                Social media is the strongest marketing platform which connect
+                people all over the globe. For a start-up or a gaint, it is
+                always the first choice for marketing their product.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h4 style="font-weight: bold;">M.I.S.C</h4>
+          <section
+            class="fragments"
+            data-auto-animate
+            data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)"
+          >
+            <div style="margin-top: 6rem;">
+              <img src="images/category.png" alt="App" />
+              <div
+                class="fragment"
+                style="
+                  position: absolute;
+                  width: 30%;
+                  top: 0;
+
+                  color: #5ce1e6;
+                  padding: 20px;
+                "
+              >
+                <span
+                  class="material-icons"
+                  style="font-size: 4rem; margin: 0 auto;"
+                >
+                  list
+                </span>
+                <h4>Categorization</h4>
+              </div>
+              <div
+                class="fragment"
+                style="
+                  position: absolute;
+                  width: 30%;
+                  right: 0;
+                  top: 30rem;
+                  color: #5ce1e6;
+                  padding: 20px;
+                "
+              >
+                <span class="material-icons" style="font-size: 4rem;">
+                  language
+                </span>
+                <h4>Offline mode</h4>
+              </div>
+              <div
+                class="fragment"
+                style="
+                  position: absolute;
+                  width: 30%;
+                  right: 0;
+                  top: 0;
+
+                  color: #5ce1e6;
+                  padding: 20px;
+                "
+              >
+                <span class="material-icons" style="font-size: 4rem;">
+                  sports_esports
+                </span>
+                <h4>Gamification</h4>
+              </div>
+              <div
+                class="fragment"
+                style="
+                  position: absolute;
+                  width: 30%;
+                  left: 0;
+                  top: 30rem;
+                  color: #5ce1e6;
+                  padding: 20px;
+                "
+              >
+                <span class="material-icons" style="font-size: 4rem;">
+                  mic
+                </span>
+                <h4>Podcasts</h4>
+              </div>
+            </div>
+          </section>
+          <section
+            data-auto-animate
+            data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)"
+          >
+            <div style="margin-top: 4rem;">
+              <div style="position: absolute; right: 0; top: 10rem;">
+                <img src="images/category.png" alt="App" />
+              </div>
+
+              <div
+                data-auto-animate-delay="0"
+                style="
+                  position: absolute;
+                  width: 50%;
+                  left: 0;
+                  top: 0;
+                  text-align: center;
+                  color: #5ce1e6;
+                  padding: 20px;
+                "
+              >
+                <div style="display: flex; justify-content: center;">
+                  <span
+                    data-auto-animate-delay="0"
+                    class="material-icons"
+                    style="font-size: 3rem;"
+                  >
+                    language
+                  </span>
+                  <h4 style="font-size: 2rem; margin-left: 1.5rem;">
+                    Offline mode
+                  </h4>
+                </div>
+
+                <div style="width: 90%;">
+                  <div
+                    class="mxgraph"
+                    style="
+                      max-width: 100%;
+                      border: 1px solid transparent;
+                      background-color: #fff;
+                      border-radius: 5%;
+                    "
+                    data-mxgraph='{"highlight":"#0000ff","nav":true,"resize":true,"toolbar":"zoom layers lightbox","edit":"_blank","xml":"&lt;mxfile host=\"app.diagrams.net\" modified=\"2020-06-29T15:45:56.173Z\" agent=\"5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36\" etag=\"uzFSppXIiIX4XjZRVnfu\" version=\"13.1.1\" type=\"google\"&gt;&lt;diagram id=\"WhY9zy5swAIanIS6_1zu\" name=\"Page-1\"&gt;3VfbbqMwEP2aPCYCU9Lksbm1K3WlSFW3u0+RAxNwazAyzoV+/Y7BhFubXpRtpUVKsM+M8Xh85mB6zjQ6XEuahD+FD7xHLP/Qc2Y9QkbDEf5rICuAixEpgEAyv4DsCrhjz2BAy6Bb5kPacFRCcMWSJuiJOAZPNTAqpdg33TaCN2dNaAAd4M6jvIs+MF+FZlnkssJvgAVhObM9HBeWiJbOZiVpSH2xr0HOvOdMpRCqaEWHKXCduzIvxbjFK9ZjYBJi9Z4B680Nv1/Mbn5kj9vJ3Zr+up+rvls8ZUf5trngVGVlCsDHjJiukCoUgYgpn1foRIpt7IOex8Je5XMrRIKgjeAjKJWZ7aVbJRAKVcSNFZcgs99mfN75ozsDt+zODnXjLKv3liBZBAqkAbuJKdckttKDE9koCUZlAOqEn1P46cTUJjBpvwaB0cgMHSRwqtiumVlqGBkc/Y5Dl4JhyMQyxUPGhjqmdohlNR9RBGpGVVuPjVoYFZQT4gPksDvkWOpqafMDiZ3oJovyWqrv6w6kYlhMV5wFMWJK8+GI3tI18KVImWJCW9dCKRGhA9eGCfWegpxZU8GFzOdyNvmFLvlkV2lS1Lzedlp2NuyguTgx8cxCpbRYXOn8kIXnx86AoVxsGHJWDjyckSx8qijeNJ7iPQa1F/KpT2O/jw7RNsZ4dZRpXwvTwiGV08pDzdN/LA5We1jnP60Lq0SKQNIoQkPfJqNBEgevclPnBA4n2VRaSZMVtmuKeF/pU0mcsCZNY+t1/jWY81GajDs0+Q4J+XzVk3dWvf01Ve84zf11hu+r+ispaVZzS7RD+vo8wxaPHLf1/mj520P3lD82igjOKkGkw60p9cL/QIPsNzUopNLfI537PuyYB2kuRgFF9uldXQwv9JDCtIogEjJbeTjkqDTOZMM4L+OORazzshGxakFnkCR31JKkkrI1SRq9IEmjfyVJlx3afIsmffZY83ktc96pZeRrtMy13IE9rq7Rt55nnA4r7kDqAkLwAd/keIJsk6RT0LmqgpzvQItrsc3Hk73eO5+m4ZEzNS6kSoonaNUeb6mPB3F+jn1bnl5WNWp6x+fUJQCly8qvIuRcL6NDoD/bBvR5K2GQepIlaoWD4AyqUL4gTqnCpTsgZ9EF7FafUgVhqu9RZ/4X&lt;/diagram&gt;&lt;/mxfile&gt;"}'
+                  ></div>
+                </div>
+                <div style="width: 90%;">
+                  <div
+                    class="mxgraph"
+                    style="
+                      max-width: 100%;
+                      border: 1px solid transparent;
+                      background-color: #fff;
+                      border-radius: 5%;
+                    "
+                    data-mxgraph='{"highlight":"#0000ff","nav":true,"resize":true,"toolbar":"zoom layers lightbox","edit":"_blank","xml":"&lt;mxfile host=\"app.diagrams.net\" modified=\"2020-06-29T15:18:51.362Z\" agent=\"5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36\" etag=\"Jo5X1NlJSHoufgG0w59V\" version=\"13.1.1\" type=\"google\"&gt;&lt;diagram id=\"QfRegZe9rW0OeRqd1_TG\" name=\"Page-1\"&gt;7Vjbbts4EP0aP1qQKFmxH2M7bgtkFwG8QNong5XGEhtJ1FL0Rfn6HUrUlbmiTRqg6wCx5nAokjOHh0NP3FV6/iRoHv/FQ0gmxA7PE3c9IWTuz/G/Asoa8OakBiLBwhpyOmDL7kGDtkYPLIRi4Cg5TyTLh2DAswwCOcCoEPw0dNvzZDhqTiMwgG1AExO9ZaGM9bLIRYd/BhbFzciOv6hbUto465UUMQ35qQe5VxN3JTiX9VN6XkGiYtfEpe63eaS1nZiATL6kw+fd1/RHWfrb+9t9cV7/++02v57q7BxpchguuJBlEwIIMSLa5ELGPOIZTa46dCn4IQtBjWOj1flcc54j6CD4A6QsdXrpQXKEYpkmunXPM7niCRdoZzxT78RVifKrfmVlfFOGNWvM9bnfuC61ZYalWRE/iACeiEVDLyoikE/4ubWfCktvAB30T8BTwPmgg4CESnYcxpVqPkatX9v1hjOcMrH11iENx/TOcfzZ8BX1RHWvLvH40JtGB1V0eAU1HIMaWxBHhiEk9i0XdyAMptAir/fgnp0VHZa5mhyIqyMmo9C5bveBylZIi7glTo8QhRT8DkaUSOh3SG54wSTjGcIBqJdjwxGEZLhnr0cO37mUPO05XCYsUg1S8XJJtdW+Z8+SpBlzQly7+tRTztUS03OkRM6i9wcBVhEIlssddoJHSacGhvOTNGlabXuYbk+n+9TJjqcZEfcUZ2Y/TqwBJV6df9sggPfHaoP7Qm3w3kcbPGdElosRC95aG0xxIB+EG2+f49mvzvFPbVPXyMSXrJC06ghKd428NGrG0qr26cfzYZ18Vl4rYV7S4C6qMtqT0H31QZdqsMvmfFDpNg4LPZ91LKUq7i5VXMgmCDPHYlje7RlyRVgBjkg2IZUUvxRe4HcRMMgCmEoI4gxHj8opP8iEISPIZoGh32xrj93un9ZlR9ypQ+ZWnkUj7ddUeg27Xi705GIs9LYh9L5tCr3/VkLvGQy6DJC3VML/FPqYFPJmH4xCjqlC7gc5D7pawVosvGG94F48VzFU1g0IhnFSJeJPlhGzFx4x/vuUEc5iyCPXed8yYmaw5m+QJ7xbGNzRW3HV3vLtUbZRKPBvowZfYpEe4lYdM2F4p+h3GNX9reIMbie/6pIxoqvmskMaWy/6QX0zLiKnwrME1Lz7Eqj5LNGsn4Ze1UUsA7mjiXTe5iQj898sQ77BpxUNYvgTjq+YivCEyZyGoO7oxZRm4TSiKCBSNfue6lI37VJIuSh3AXb5HafX3LVmz/Jm/gBv5q/nDZrdL2y1bHU/U7pX/wE=&lt;/diagram&gt;&lt;/mxfile&gt;"}'
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            data-auto-animate
+            data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)"
+          >
+            <div style="margin-top: 4rem;">
+              <div style="position: absolute; left: 0;">
+                <img src="images/category.png" alt="App" />
+              </div>
+
+              <div
+                data-auto-animate-delay="0"
+                style="
+                  position: absolute;
+                  width: 50%;
+                  right: 0;
+                  top: 5rem;
+                  text-align: center;
+                  color: #5ce1e6;
+                  padding: 20px;
+                "
+              >
+                <div style="display: flex; justify-content: center;">
+                  <span
+                    data-auto-animate-delay="0"
+                    class="material-icons"
+                    style="font-size: 3rem;"
+                  >
+                    mic
+                  </span>
+                  <h4 style="font-size: 2rem; margin-left: 1.5rem;">Podcast</h4>
+                </div>
+
+                <div style="width: 500px;">
+                  <div
+                    class="mxgraph"
+                    style="
+                      max-width: 100%;
+                      border: 1px solid transparent;
+                      background-color: #fff;
+                      border-radius: 5%;
+                      margin-right: 20px;
+                    "
+                    data-mxgraph='{"highlight":"#0000ff","nav":true,"resize":true,"toolbar":"zoom layers lightbox","edit":"_blank","xml":"&lt;mxfile host=\"app.diagrams.net\" modified=\"2020-06-29T16:36:52.816Z\" agent=\"5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36\" etag=\"m5Ir1qxshFtKC_c7H-dn\" version=\"13.1.1\" type=\"google\"&gt;&lt;diagram id=\"T-dGVu-9PNn8BRgxCnL-\" name=\"Page-1\"&gt;1VZNc5swEP01PuLBEDv20R9x0k7SSceZ5qwgGdQAS8Vi4/76rpAwUMZOPJPpNBxs9LTSave9XTTwl0l5q1gWPQAX8cBzeTnwVwPPm06m9KuBgwGupp4BQiW5gUYNsJG/hQVdixaSi7xjiAAxyqwLBpCmIsAOxpSCfddsC3HXa8ZC0QM2AYv76LPkGNmwvOsGvxMyjGrPo8nMzCSsNraR5BHjsG9B/s3AXyoANG9JuRSxzl2dF7NufWL2eDAlUnzPgruvfBb92D0Wq+9+8PBl9ktFM2dsdtmxuLABP4kS9ao0K9AeHA91NgSn5NghKIwghJTFNw26UFCkXGiXLo0am3uAjMARgT8F4sEyzQoEgiJMYjvbD8tGmkOhAnEmlloeTIUCz9j5xk7H0nJgk3YrIBGoDmSgRMxQ7rpCYFZP4dHuuPQRZKpTZ6Xv+5Z4q3zPdbtbmIPaVQ1xc6XYoWWWaYO8bUEvrYM2UEX4BeSPeuR/E/u8RzoJN9OvMqlqpU3WTiiUVCzzWIYpYahJPqL37EXEj5BLlKBnXwAREjKI9cSCBa9hJZclxKAqX/62esikcjbPM1PTWkusHmxlqQW2sOdZRYi6Gcx1frx1wFN/KKkdbCUJUQ0D8uitOUNGfxqnANexpGZBr85WCeHsaF9QTjXpZHQssvB1ulNKhzPypsMsDU/qUkcryrNKqmevu4oYTex43+osFopaTWXqntZeRxOXCsDrCeDzk3/1JvmJLJwcAskoP2tNwToDHrAcLeokgkt25N36ol5GO5qDutVzrlm9XxTjyX8miuueKOYFl/C5vgX/qMePx7MP7vGX+Wl4Njt+6OfBP3U3IJo8d5MJEUTm5kVqz3WVe+7T06YnlDc7Qq+432wyOSp4FXXrSCHVcmPWJCC16EpdQIG60S+PV0Mtw7qhJWWoL6zDQKKS5TBTEIg8/5ia9qd/1/SsV9Njr1/TE+/imqZhc4U0zDf3cP/mDw==&lt;/diagram&gt;&lt;/mxfile&gt;"}'
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            data-auto-animate
+            data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)"
+          >
+            <div style="margin-top: 4rem;">
+              <div style="position: absolute; right: 0; top: 10rem;">
+                <img src="images/category.png" alt="App" />
+              </div>
+
+              <div
+                data-auto-animate-delay="0"
+                style="
+                  position: absolute;
+                  width: 50%;
+                  left: 0;
+
+                  text-align: center;
+                  color: #5ce1e6;
+                  padding: 20px;
+                "
+              >
+                <div style="display: flex; justify-content: center;">
+                  <span
+                    data-auto-animate-delay="0"
+                    class="material-icons"
+                    style="font-size: 3rem;"
+                  >
+                    list
+                  </span>
+                  <h4 style="font-size: 2rem; margin-left: 1.5rem;">
+                    Categorization
+                  </h4>
+                </div>
+
+                <div style="height: 600px;">
+                  <!-- <div
+                    class="mxgraph"
+                    style="
+                      max-height: 60%;
+                      border: 1px solid transparent;
+                      background-color: #fff;
+                      border-radius: 5%;
+                      margin-right: 20px;
+                    "
+                    data-mxgraph='{"highlight":"#0000ff","nav":true,"resize":true,"toolbar":"zoom layers lightbox","edit":"_blank","xml":"&lt;mxfile host=\"app.diagrams.net\" modified=\"2020-06-29T17:39:12.104Z\" agent=\"5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36\" etag=\"gJgzR-jOsx-PTZ5b2_lj\" version=\"13.3.5\" type=\"device\"&gt;&lt;diagram id=\"C5RBs43oDa-KdzZeNtuy\" name=\"Page-1\"&gt;7Vlbd9o4EP41fmyOb9jsY4CQ3jane9LdbJ72CHuwtQiLlcXF/fU7smVsxyqQlDRtTnkAaTSSJc33fRoLyxsvd9eCrNLfeQzMcu14Z3kTy3WHwRC/laGoDL7nVYZE0LgyOY3hln4BbbS1dU1jyDuOknMm6aprjHiWQSQ7NiIE33bd5px1n7oiCfQMtxFhfesdjWWql+WGjf0t0CStn+wEv1UtS1I765XkKYn5tmXyrixvLDiXVWm5GwNTe1fvy9274o59XATX7//I/yN/jj58vvnrTTXY9DFd9ksQkMnzDu1WQ28IW+v90muVRb2Bgq+zGNQgtuWNUrlkWHSw+C9IWeiAk7XkaOJCpjzhGWEfOV9pvznPpHZzVB2y+FIFFuszxqNFZZpSxvQzsKb9h1jLpeCLfezUAPtAKGdGZsBGJFok5UTHnHGBTRnPQA0VIxj0WprJXTXW0Yl7q2OQ87WI4ICfJockIoFD4wWVn5pfC6c6ctfAlyBFgQ4CGJF00wUz0ZxI9n5N3LGgQ/8IGHgGGAQM5z+K6QaLiSqOU85zUI+X+MWA5OpX7bNrj4mEhKuZVN1wFq2eBzCl4rlNqYTbFSk3dosq1MVZGz+4RaOEkTzX0T8CjscFdwNCwu5gOOrW4aDqokUx1BKxbRTGGWiXtKUugf1MAfR7AbxH0f1F5W+hctCncuiH/8zpcHWZeIubENg7ck+07B6nssZKfZyczGw90idOM9ly4fN5jvPqSH7to2Hq+l2Yeu4D/FVr070eQHA/86ejMjhFVi6FpBFTaLUx/DxLygzBUlOtfGei0RGzuvTGjFJUqkxlFZUuUZWBTE8Vp5QvZ+v8uDB1wKuoMSVLytRevwW2AVwWMcgXYTTJsBIhSkGYWYGPpLgR3iRoap9LFiLTn1HWah3TeHECg67VPm1dc7wzCJuRXI4BQg/idVwYurpnVDaDArYiDTsq/1bdLwa6dt9qmexqtVOV4klnT1uNDqnMUTVyz51YfE1awouuuPjhs4nLoQ1pIWMKMkrR1CjK9BOPI8xTDh2FryMD2Uv790hBjPHwfxZiYiRE0eqkqvfttqZbWXsmQrsnEtp7qTcF42wGpxzpZe554lF9+in/AF1IFNkFQ+9kVXTCQ5hd6oYljeMKd5DTL2RWDqVCu1IiVW7VYGQNJl/PRS3Xm5cfIx4O8aJH7f2Vh56H1b5VMFH+jX3h+nXfojPS+XPJc6l0+JKq4LQ0oVGIY6rQ0YRGIn4sVXix+wPjbIY9VbjhPy1hwzMS1g+H3o9OUdMdYE+mbwAJqV/MSBRB/hiF//Ua9k2vYb4ptwu+62tY/4LwFpi6rt/Htnh9KXbYTbED+6VT7P59ygTyVx8H3+7SYWCMg4EOT4gDVps/dCqBbf4V867+Bw==&lt;/diagram&gt;&lt;/mxfile&gt;"}'
+                  ></div> -->
+                  <div
+                    class="mxgraph"
+                    style="
+                      max-width: 100%;
+                      border: 1px solid transparent;
+                      background-color: #fff;
+                      border-radius: 5%;
+                      margin-right: 20px;
+                    "
+                    data-mxgraph='{"highlight":"#0000ff","nav":true,"resize":true,"toolbar":"zoom layers lightbox","edit":"_blank","xml":"&lt;mxfile host=\"app.diagrams.net\" modified=\"2020-06-30T16:44:01.157Z\" agent=\"5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36\" etag=\"OVxURYt0S17EnCZccBNV\" version=\"13.3.5\" type=\"google\"&gt;&lt;diagram id=\"qvpl6kiq-vhNpCT8PGE_\" name=\"Page-1\"&gt;7Zhtc5s4EMc/jWfuXiSDwBDyMrHdJNP0YS7NpHdvOgrIoBqQI+TY7qfv6gEBhtppz07TmWQyNtqVhPj9d+VFA2+Ury44nqfvWEyygevEq4E3HrhuGITwKQ1rbRiGrjYknMbahGrDDf1GjNEx1gWNSdnqKBjLBJ23jRErChKJlg1zzpbtblOWte86xwnpGG4inHWtdzQWqXks96S2XxKapNWdUXCqPTmuOpsnKVMcs2XD5E0G3ogzJvRVvhqRTLKruOhxb37gtQvjpBBPGVDevv2Miovbf66nV2er60/+5e3dEfL0NI84W5gnHrhBBhOeTxnMC8sWa8MieFiwynFUKqXOoAPy5qvaCVeJ/B6ljJUgnJkMlqXn015DxE7tkhiomybjImUJK3A2qa3nnC2KmMhncaBV97lmbA5GBMavRIi1CSG8EAxMqcgz45X3N050Cm3AxtefzXyq8a9sHPtVc7xqOsdr0+pyN1KUbMEjsg22iV/MEyK29DMZIpk0bmBUvSAsJ7Ae6MBJhgV9bEcqNgGf2H526EdGlaQmN92hiUyTmq7vtKfQCzWj6siCi8YyapOKt5+JvU7o3ZaEd0ID8mauFI0E48B/mVJBbuZYoV7CptOW+ZFwQSF/zzKaFGC7Z0KwfJtucgRZbSVded0NYlV7WW8NFdS0sSsEzo+1aVHdgnA4vIqG69HD0WQyu7xL/itHy689CM9imSRyk5QfKZF3jSLIHfG7c877X7njPjF3wn3nzlP12bbqhj7vCfwiuc4IC5IwTuUOuSFLG/pPRruQwuwj1D3UDvXTbqR7Jz2hjjY3kb2x7P5S3cwhJLsAqw2jYILsJniPo1mimH9YiIwWxNhjzGcfYBQVauM/dvw9gd3YQ1DPHuL3gA0PxXXY4fqRZRSiyv54l3Nc9FYCEcvkliyrAJ7c479gifAPy3B6r/6WlxKio0qIKc5pttbDc1awUmnU6lJXGY4sMoxLKXqkuytnwZSunSJk4PqblakPZKRV1V22VZHyFSuwjOW1XLgv4fgAeFdfZPtW8fFL07j1NFoR66mivXJrOaxbR71sqriHi2bkS7tm5Jvolxakmt0MqH3NLJBWlQfS0VimDv2ngLAuy6DOD19miO3p+TU0Z92YoQHTZIz1NYeYzLG+sOHDZW1PGvffVEg1rUxNYzt4TL9OlNnKV+dPFZKvOfWaU685td+c+rMqgPCFVQB+pwI4X5TAofzTaqvhcDfZ4DnJBh2yk0LA42Ba5KTnlexl4/XRbrzhc+I96eAduM+6G2yeKe0BcuC8sN0h7IG8SVhwNrPno6gN1J57Oopimdp320qYfJXIff4YFzFnND5+WNBo9iUCtjgSh6E83HgLs6+7DcqoDzMK/ANxPu1wfo9zcmjWuIhSdazGDWGnAm5uWR3jjHRdCkvw3qi/XiG2RtBudYwaFeOdYoQH0qKKhoYYV4LkYEG/RRBsjncyMjUvDxEtkmvVGqP+U+n9SIGcsKuF26OFezAtuoecRouDb0QvTQsvOJgWA1OBN07469rbm3wH&lt;/diagram&gt;&lt;/mxfile&gt;"}'
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            data-auto-animate
+            data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)"
+          >
+            <div style="margin-top: 4rem;">
+              <div style="position: absolute; left: 0; top: 10rem;">
+                <img src="images/category.png" alt="App" />
+              </div>
+
+              <div
+                data-auto-animate-delay="0"
+                style="
+                  position: absolute;
+                  width: 50%;
+                  right: 0;
+
+                  text-align: center;
+                  color: #5ce1e6;
+                  padding: 20px;
+                "
+              >
+                <div style="display: flex; justify-content: center;">
+                  <span
+                    data-auto-animate-delay="0"
+                    class="material-icons"
+                    style="font-size: 3rem;"
+                  >
+                    sports_esports
+                  </span>
+                  <h4 style="font-size: 2rem; margin-left: 1.5rem;">
+                    Gamification
+                  </h4>
+                </div>
+
+                <div style="height: 600px;">
+                  <!-- <div
+                    class="mxgraph"
+                    style="
+                      max-height: 60%;
+                      border: 1px solid transparent;
+                      background-color: #fff;
+                      border-radius: 5%;
+                      margin-right: 20px;
+                    "
+                    data-mxgraph='{"highlight":"#0000ff","nav":true,"resize":true,"toolbar":"zoom layers lightbox","edit":"_blank","xml":"&lt;mxfile host=\"app.diagrams.net\" modified=\"2020-06-29T17:39:12.104Z\" agent=\"5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36\" etag=\"gJgzR-jOsx-PTZ5b2_lj\" version=\"13.3.5\" type=\"device\"&gt;&lt;diagram id=\"C5RBs43oDa-KdzZeNtuy\" name=\"Page-1\"&gt;7Vlbd9o4EP41fmyOb9jsY4CQ3jane9LdbJ72CHuwtQiLlcXF/fU7smVsxyqQlDRtTnkAaTSSJc33fRoLyxsvd9eCrNLfeQzMcu14Z3kTy3WHwRC/laGoDL7nVYZE0LgyOY3hln4BbbS1dU1jyDuOknMm6aprjHiWQSQ7NiIE33bd5px1n7oiCfQMtxFhfesdjWWql+WGjf0t0CStn+wEv1UtS1I765XkKYn5tmXyrixvLDiXVWm5GwNTe1fvy9274o59XATX7//I/yN/jj58vvnrTTXY9DFd9ksQkMnzDu1WQ28IW+v90muVRb2Bgq+zGNQgtuWNUrlkWHSw+C9IWeiAk7XkaOJCpjzhGWEfOV9pvznPpHZzVB2y+FIFFuszxqNFZZpSxvQzsKb9h1jLpeCLfezUAPtAKGdGZsBGJFok5UTHnHGBTRnPQA0VIxj0WprJXTXW0Yl7q2OQ87WI4ICfJockIoFD4wWVn5pfC6c6ctfAlyBFgQ4CGJF00wUz0ZxI9n5N3LGgQ/8IGHgGGAQM5z+K6QaLiSqOU85zUI+X+MWA5OpX7bNrj4mEhKuZVN1wFq2eBzCl4rlNqYTbFSk3dosq1MVZGz+4RaOEkTzX0T8CjscFdwNCwu5gOOrW4aDqokUx1BKxbRTGGWiXtKUugf1MAfR7AbxH0f1F5W+hctCncuiH/8zpcHWZeIubENg7ck+07B6nssZKfZyczGw90idOM9ly4fN5jvPqSH7to2Hq+l2Yeu4D/FVr070eQHA/86ejMjhFVi6FpBFTaLUx/DxLygzBUlOtfGei0RGzuvTGjFJUqkxlFZUuUZWBTE8Vp5QvZ+v8uDB1wKuoMSVLytRevwW2AVwWMcgXYTTJsBIhSkGYWYGPpLgR3iRoap9LFiLTn1HWah3TeHECg67VPm1dc7wzCJuRXI4BQg/idVwYurpnVDaDArYiDTsq/1bdLwa6dt9qmexqtVOV4klnT1uNDqnMUTVyz51YfE1awouuuPjhs4nLoQ1pIWMKMkrR1CjK9BOPI8xTDh2FryMD2Uv790hBjPHwfxZiYiRE0eqkqvfttqZbWXsmQrsnEtp7qTcF42wGpxzpZe554lF9+in/AF1IFNkFQ+9kVXTCQ5hd6oYljeMKd5DTL2RWDqVCu1IiVW7VYGQNJl/PRS3Xm5cfIx4O8aJH7f2Vh56H1b5VMFH+jX3h+nXfojPS+XPJc6l0+JKq4LQ0oVGIY6rQ0YRGIn4sVXix+wPjbIY9VbjhPy1hwzMS1g+H3o9OUdMdYE+mbwAJqV/MSBRB/hiF//Ua9k2vYb4ptwu+62tY/4LwFpi6rt/Htnh9KXbYTbED+6VT7P59ygTyVx8H3+7SYWCMg4EOT4gDVps/dCqBbf4V867+Bw==&lt;/diagram&gt;&lt;/mxfile&gt;"}'
+                  ></div> -->
+                  <!-- <div
+                    class="mxgraph"
+                    style="
+                      max-height: 60%;
+                      border: 1px solid transparent;
+                      background-color: #fff;
+                      border-radius: 5%;
+                      margin-right: 20px;
+                    "
+                    data-mxgraph='{"highlight":"#0000ff","nav":true,"resize":true,"toolbar":"zoom layers lightbox","edit":"_blank","xml":"&lt;mxfile host=\"app.diagrams.net\" modified=\"2020-06-29T17:40:20.972Z\" agent=\"5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36\" etag=\"OUlfo3wMI9rE0-NajDOA\" version=\"13.3.5\" type=\"device\"&gt;&lt;diagram id=\"C5RBs43oDa-KdzZeNtuy\" name=\"Page-1\"&gt;7Vpbd9o4EP41PG6PL2DDI6QhabfNtiftJjztUWxhaxEWlcWtv74jLGMLO1xajCnlhWONx5Ks75tvNMIN+2a8uONoEn5kPqYNy/AXDfttw7LaTht+pWGZGJptKzEEnPiJycwMj+Q7VkZDWafEx7HmKBijgkx0o8eiCHtCsyHO2Vx3GzKqjzpBAS4YHj1Ei9Yn4otQvZblZvZ7TIIwHdl0OsmdMUqd1ZvEIfLZPGeybxv2DWdMJFfjxQ2mcu3SdXl6t3yiH0bO3fvP8Tf0tff3l4d//0o66x/yyPoVOI7EcbtWWM4Qnar1Uu8qlukCcjaNfCw7MRp2LxRjCpcmXP6PhVgqwNFUMDAxLkIWsAjRD4xNlN+QRUK5mbKNI78rgYX2C2XeKDH1CaVqDGgp/za0YsHZaI2d7GANhHSm6AXTHvJGwWqiN4wyDrciFmHZlQ9kUO+STe42s/b2XNuUuogHeJufk/jJcXP8U4jcYTbGgi/BgWOKBJnpJEWK68Hab/3oJ0ZgfpahwtJ2W8kjKirNlKRpFzGbcg+rpzJWwEVuGplpxZUDeGMXePPPBEdg6XJBPFjY11kkEZyHRODHCfLk3Tnojs6sPGNgBXoBRXGs8N5Bh8PgnGEu8GIrUOqu1bHe6EvuqBWfZ6pitpRLmFMUx3gdXA2WQzFoFjAYgND+YeELMPPls+p51RjIngEr1Xy7WE9LtpY/xZMkmnaHfV4e3Kb735C0J93AHj24mL5DA6Qkerc8KI6lUf2zapG6sOEwxpoQFBTFcg2N3tamoiTvdgxFKV0Z0yzQuWE5FBaz55MZXAby8oGlRhgkZy/Qfjdz9MAopX5JiOQCCC+IeM7IBq1B7k7GO9lY5kn4rDN0oBH0rOhq7svXvQn6S4rnFCiConiOOaBoGd+mOBaERTBov6iCIRu/TOPdqUcTJyl9fTQmVMJwj+kMQ3JDJQkKURJE0PAAHszLVQ+GJFEALSdrfVlRDZS8ysSlx7VZlrfS2M/nLdM+QuIqZ1Vxk1lbuBpnFq7bssbOzaddV7Rum3UuWj8yGFPWf3K4iIkQYkVWeZe5ZTQ3Aq/TOt2GsRSQ5vmE3TlkyaprNBPg1RlgNCur0koBt89IaM8B8Z1Ca5YobbnjeUmtWdTaPhZeuNoYcRT5bKztkOQ5mpTeeII9MiTeBauw1XE3CnfbPWHlXg5XcSNbVrpfY3VrrNr7xmqrEr3vco6WOYeJVPH49XSweWTnuBvntYf5w0Uyg+NW4e0CM2XJXR8xzRwtM5JeCDE7p9mItJr6TrTltPQuqj7aKZ4Wd1d1u3xQJiOeaO61bH+9bG92ai/bU+L9TkKgyUCFh8JbE08NQvBrQF/LhoqAtpqnUfzNvUN7s/CsWvFbRcX3ZS2SbpKSM6BpnBwAeR6QRxTV/+JKD9eovfToFJB54rCwKSQhiQVT41wSFpt7oPqRsIoxci0CD1XeVFB3K29dH2YYm/uxiqU3Ha4mCh2hXDPPlEK1/Re6ddo5+bhHq79XcMSmQZhPtslhn49jkvxV6pM4ybjXkmtLybXeNNVYcnXqDOZjnL2cOpj3/rLhzEqu4onwJ3jVEMU4H6/yM1n/Tzijz9JmBfszaGZf7SZ5N/v02b79AQ==&lt;/diagram&gt;&lt;/mxfile&gt;"}'
+                  ></div> -->
+                  <div
+                    class="mxgraph"
+                    style="
+                      max-width: 100%;
+                      border: 1px solid transparent;
+                      background-color: #fff;
+                      border-radius: 5%;
+                      margin-right: 20px;
+                    "
+                    data-mxgraph='{"highlight":"#0000ff","nav":true,"resize":true,"toolbar":"zoom layers lightbox","edit":"_blank","xml":"&lt;mxfile host=\"app.diagrams.net\" modified=\"2020-06-30T16:46:25.061Z\" agent=\"5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36\" etag=\"ZUNOO8AVsuj1RsLWNxlz\" version=\"13.3.5\" type=\"google\"&gt;&lt;diagram id=\"GUhxl6GvSGbSKeakvDA_\" name=\"Page-1\"&gt;5Vhbb9owGP01PAblBoVHyq3VWMWEpq17qUxiErdOnDmmkP362YmdO6HbKKo0VAE+/nz7vnNOXHrWNDguKYj8z8SFuGfq7rFnzXqmORqO+LsAkgywR2YGeBS5GWQUwAb9ghLUJbpHLowrgYwQzFBUBR0ShtBhFQxQSg7VsB3B1VUj4MEGsHEAbqLfkMt8eSzzpsDvIPJ8tbIxHGc9AVDB8iSxD1xyKEHWvGdNKSEs+xYcpxCL3Km8ZOMWJ3rzjVEYsrcMuNsbegJcyDz9E5s/L4YPM0uTx3gFeC8PvMYgiUWWfSjSDwIot88SlRPo8hTJJqHMJx4JAZ4X6C0l+9CFYmGdt4qYFSERBw0OPkPGEllvsGeEQz4LsOzdkZBNCSY0XdHS0xfHm4eWeYjJnjpyfw9Pq58b72n5Y7u6n3jbexcsDU3Gib2XBspULSEJIKMJD6AQA4Zeq+UHkkVeHpcPXRPEt2LqkvCWbmdDEsVjvToFA9SDTI4qyjWhFCSlsEgExKfXMUZ66zpyOv4lm1G1SmcsoJQh7WzpymGJLV9jSBv84EyP0rI6TBTw9uAjBjcRSOtz4DZRrfUrpAxxxU0w8kKObQljJOAdMaPkJZed0VV+MQc8dhZW9Q5riVOJPBTytiXkl5Q91E9ToZT1zqS2StBsJHUOaCiOmVPg2urj2aXJ93LjUUzWH6jm7Cgnz1qJbP29Oi1p7ak4OuLs66h4UCOJZb+PihvrGIP3V7HVIFyDY0qSK7CFeE1ixBCpSLOuWUZqos6fdoIXLoj9nI9NVSu/CI6euEP0QehSgtx+5JMQmvmQtufBDmGs8JBHX8YjBlbNI+xBwyOGLR5hyPL9k0m0O++wUbQZih0udEEv3eNUDz/Sczp3kJJpPJYN5eIOYr/RQa50D+APkVZln3OQS4ncPi9yJTsUpHfgrkdyJu+zroBFxy1wXryUWCVi7NIXD0kXm8RRdlcXJQeqsUNHQcVbuZ+Zz5i45E9EbsyF44ZWH/Fr/g5xytK+w1c0Fy5ggH8InOtggVEItbShxZwF5sIwR+JdM/ifOepHoddpJ01vajGYU5zPTk8o393lLal+r8z9p2RJhtHqSe91cRk3KLYEAdpxhqS8+KBuZNyU/UjT+7o5PGNKaWsNKeJ5g/ScU511IOs6DmSNq4wZ1wwoc9SGATXmsW+657mckbWyTNH3P3OyLQUo1MS/33FuY1/26Je2FJDmUZhIN6uRfpG+1OLFEQo3uqpPDZo2NW5xqfGfmxRvFj+eZGwrfoGy5r8B&lt;/diagram&gt;&lt;/mxfile&gt;"}'
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section>
+          <h4 style="font-weight: bold;">Collaboration tools</h4>
+          <section>
+            <div style="display: flex; justify-content: space-evenly;">
+              <div>
+                <img
+                  src="images/slack.png"
+                  alt="Slack"
+                  style="width: 6rem; height: 6rem;"
+                />
+                <h4 style="font-size: 1.5rem;">Slack</h4>
+              </div>
+              <div>
+                <img
+                  src="images/github.png"
+                  alt="github"
+                  style="width: 6rem; height: 6rem;"
+                />
+                <h4 style="font-size: 1.5rem;">Github</h4>
+              </div>
+              <div>
+                <img
+                  src="images/heroku.png"
+                  alt="heroku"
+                  style="width: 6rem; height: 6rem;"
+                />
+                <h4 style="font-size: 1.5rem;">Heroku</h4>
+              </div>
+            </div>
+
+            <hr style="color: #fff;" />
+            <div style="display: flex; justify-content: space-evenly;">
+              <div>
+                <img
+                  src="images/microsoft.png"
+                  alt="Slack"
+                  style="width: 6rem; height: 6rem;"
+                />
+                <h4 style="font-size: 1.5rem;">Visual code</h4>
+              </div>
+              <div>
+                <img
+                  src="images/trello.png"
+                  alt="github"
+                  style="width: 6rem; height: 6rem;"
+                />
+                <h4 style="font-size: 1.5rem;">Trello</h4>
+              </div>
+              <div>
+                <img
+                  src="images/google-docs.png"
+                  alt="heroku"
+                  style="width: 6rem; height: 6rem;"
+                />
+                <h4 style="font-size: 1.5rem;">Google docs</h4>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section>
+          <h4 style="font-weight: bold;">Reach us</h4>
+          <section>
+            <img src="images/logo_skyblue.png" alt="Logo" />
+            <p style="font-size: 2rem;">
+              Website:
+              <a
+                href="https://www.fiveberg.de/"
+                style="color: #5ce1e6;"
+                target="_blank"
+                >https://www.fiveberg.de</a
+              >
+            </p>
+            <p style="font-size: 2rem;">
+              Facebook:
+              <a
+                href="https://www.facebook.com/Fiveberg/"
+                style="color: #5ce1e6;"
+                target="_blank"
+                >https://www.facebook.com/Fiveberg/</a
+              >
+            </p>
+            <p style="font-size: 2rem;">
+              Instagram:
+              <a
+                href="https://www.instagram.com/five.berg/"
+                style="color: #5ce1e6;"
+                target="_blank"
+                >https://www.instagram.com/five.berg/</a
+              >
+            </p>
+          </section>
+        </section>
+        <section>
+          <h4 style="font-weight: bold;">References</h4>
+
+          <section>
+            <div style="display: flex; justify-content: space-evenly;">
+              <div
+                style="
+                  background-color: #5ce1e6;
+                  width: 15rem;
+                  padding: 5px;
+                  font-size: 15px;
+                  text-align: left;
+                  overflow-wrap: break-word;
+                  border-radius: 5px;
+                "
+              >
+                <span class="material-icons" style="color: #000;">
+                  code
+                </span>
+                <h2 style="color: #000;">
+                  Reveal.js
+                </h2>
+
+                <!-- <span class="material-icons" style="font-size: 2rem;">
+                    code
+                  </span> -->
+
+                <p>
+                  <a
+                    href="https://revealjs.com/backgrounds/"
+                    target="_blank"
+                    style="color: #000;"
+                    >https://revealjs.com/backgrounds/</a
+                  >
+                </p>
+              </div>
+              <div
+                style="
+                  background-color: #5ce1e6;
+                  width: 15rem;
+                  padding: 5px;
+                  font-size: 15px;
+                  text-align: left;
+                  overflow-wrap: break-word;
+                  border-radius: 5px;
+                "
+              >
+                <span class="material-icons" style="color: #000;">
+                  emoji_emotions
+                </span>
+                <h2 style="color: #000;">Flaticon</h2>
+                <p>
+                  <a
+                    href="https://material.io/resources/icons/?style=baseline"
+                    target="_blank"
+                    style="color: #000;"
+                    >https://material.io/resources/icons/?style=baseline</a
+                  >
+                </p>
+              </div>
+              <div
+                style="
+                  background-color: #5ce1e6;
+                  width: 15rem;
+                  padding: 5px;
+                  font-size: 15px;
+                  text-align: left;
+                  overflow-wrap: break-word;
+                  border-radius: 5px;
+                "
+              >
+                <span class="material-icons" style="color: #000;">
+                  account_circle
+                </span>
+                <h2 style="color: #000;">Material icon</h2>
+                <p>
+                  <a
+                    href="https://material.io/resources/icons/?style=baseline"
+                    target="_blank"
+                    style="color: #000;"
+                    >https://material.io/resources/icons/?style=baseline</a
+                  >
+                </p>
+              </div>
+            </div>
+            <hr />
+            <div style="display: flex; justify-content: space-evenly;">
+              <div
+                style="
+                  background-color: #5ce1e6;
+                  width: 15rem;
+                  padding: 5px;
+                  font-size: 15px;
+                  text-align: left;
+                  overflow-wrap: break-word;
+                  border-radius: 5px;
+                "
+              >
+                <span class="material-icons" style="color: #000;">
+                  video_library
+                </span>
+                <h2 style="color: #000;">Adobe Premiere Pro</h2>
+                <p>
+                  <a
+                    href="https://app.diagrams.net/"
+                    target="_blank"
+                    style="color: #000;"
+                    >https://www.adobe.com/de/</a
+                  >
+                </p>
+              </div>
+              <div
+                style="
+                  background-color: #5ce1e6;
+                  width: 15rem;
+                  padding: 5px;
+                  font-size: 15px;
+                  text-align: left;
+                  overflow-wrap: break-word;
+                  border-radius: 5px;
+                "
+              >
+                <span class="material-icons" style="color: #000;">
+                  videocam
+                </span>
+                <h2 style="color: #000;">Powtoon</h2>
+                <p>
+                  <a
+                    href="https://developers.google.com/chart"
+                    target="_blank"
+                    style="color: #000;"
+                    >https://www.powtoon.com/</a
+                  >
+                </p>
+              </div>
+              <div
+                style="
+                  background-color: #5ce1e6;
+                  width: 15rem;
+                  padding: 5px;
+                  font-size: 15px;
+                  text-align: left;
+                  overflow-wrap: break-word;
+                  border-radius: 5px;
+                "
+              >
+                <span class="material-icons" style="color: #000;">
+                  image
+                </span>
+                <h2 style="color: #000;">Pixabay</h2>
+                <p>
+                  <a
+                    href="https://pixabay.com/images/search/star%20sky/"
+                    target="_blank"
+                    style="color: #000;"
+                    >https://pixabay.com/images/search/star%20sky/</a
+                  >
+                </p>
+              </div>
+            </div>
+            <hr />
+            <div
+              style="
+                display: flex;
+                justify-content: space-evenly;
+                height: 11rem;
+              "
+            >
+              <div
+                style="
+                  background-color: #5ce1e6;
+                  width: 15rem;
+                  padding: 5px;
+                  font-size: 15px;
+                  text-align: left;
+                  overflow-wrap: break-word;
+                  border-radius: 5px;
+                "
+              >
+                <span class="material-icons" style="color: #000;">
+                  show_chart
+                </span>
+                <h2 style="color: #000;">Diagrams.net</h2>
+                <p>
+                  <a
+                    href="https://app.diagrams.net/"
+                    target="_blank"
+                    style="color: #000;"
+                    >https://app.diagrams.net/</a
+                  >
+                </p>
+              </div>
+              <div
+                style="
+                  background-color: #5ce1e6;
+                  width: 15rem;
+                  padding: 5px;
+                  font-size: 15px;
+                  text-align: left;
+                  overflow-wrap: break-word;
+                  border-radius: 5px;
+                "
+              >
+                <span class="material-icons" style="color: #000;">
+                  pie_chart
+                </span>
+                <h2 style="color: #000;">Google charts</h2>
+                <p>
+                  <a
+                    href="https://developers.google.com/chart"
+                    target="_blank"
+                    style="color: #000;"
+                    >https://developers.google.com/chart</a
+                  >
+                </p>
+              </div>
+              <div
+                style="
+                  background-color: #5ce1e6;
+                  width: 15rem;
+
+                  padding: 5px;
+                  font-size: 15px;
+                  text-align: left;
+                  overflow-wrap: break-word;
+                  border-radius: 5px;
+                "
+              >
+                <span class="material-icons" style="color: #000;">
+                  language
+                </span>
+                <h2 style="color: #000;">Digital news reports</h2>
+
+                <p>
+                  <a
+                    href="http://www.digitalnewsreport.org/survey/2019/germany-2019/"
+                    target="_blank"
+                    style="color: #000;"
+                    >http://www.digitalnewsreport.org/survey/2019/germany-2019/</a
+                  >
+                </p>
+              </div>
+            </div>
+          </section>
+        </section>
+      </div>
+      <img
+        src="images/logo_skyblue.png"
+        alt="logo"
+        style="width: 120px; height: 60px; float: left;"
+      />
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://app.diagrams.net/js/viewer.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        center: true,
+        backgroundTransition: "convex",
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+      Reveal.on("fragmentshown", (event) => {
+        // event.fragment = document.getElementById('Apps').className += "fragment grow"
+        // event.fragment = document.getElementById('ui').className += "fragment grow"
+        // event.fragment = document.getElementById('time').className += "fragment grow"
+      });
+
+      Reveal.on("fragmenthidden", (event) => {
+        // event.fragment = the fragment DOM element
+        // event.fragment = document.getElementById('Apps').className += ""
+        // event.fragment = document.getElementById('ui').className += ""
+        // event.fragment = document.getElementById('time').className += ""
+      });
+      // Load google charts
+      Reveal.on("slidechanged", (event) => {
+        google.charts.load("current", { packages: ["corechart"] });
+        google.charts.setOnLoadCallback(drawChart);
+      });
+
+      // Draw the chart and set the chart values
+      function drawChart() {
+        var data1 = google.visualization.arrayToDataTable([
+          ["Podcast", "Customer result"],
+          ["Yes", 165],
+          ["No", 39],
+        ]);
+        var data2 = google.visualization.arrayToDataTable([
+          ["Offline", "Customer result"],
+          ["Yes", 176],
+          ["No", 28],
+        ]);
+        var data3 = google.visualization.arrayToDataTable([
+          ["Game", "Customer result"],
+          ["Yes", 55],
+          ["No", 8],
+        ]);
+        var data4 = google.visualization.arrayToDataTable([
+          ["Customization", "Customer result"],
+          ["Yes", 173],
+          ["No", 32],
+        ]);
+
+        // Optional; add a title and set the width and height of the chart
+        var options1 = {
+          width: 500,
+          height: 400,
+          fontSize: 15,
+          backgroundColor: "transparent",
+          is3D: true,
+
+          legend: {
+            position: "bottom",
+            textStyle: {
+              color: "#fff",
+            },
+          },
+
+          titleTextStyle: {
+            alignment: "center",
+            color: "#fff",
+            fontFamily: "Lato",
+            fontSize: 20,
+            bold: false,
+          },
+        };
+        var options2 = {
+          width: 500,
+          height: 400,
+          fontSize: 15,
+          backgroundColor: "transparent",
+          is3D: true,
+          legend: {
+            position: "bottom",
+            textStyle: {
+              color: "#fff",
+            },
+          },
+
+          titleTextStyle: {
+            color: "#fff",
+            fontFamily: "Lato",
+            fontSize: 20,
+            bold: false,
+          },
+        };
+        var options3 = {
+          width: 500,
+          height: 400,
+          fontSize: 15,
+          backgroundColor: "transparent",
+          is3D: true,
+          legend: {
+            position: "bottom",
+            textStyle: {
+              color: "#fff",
+            },
+          },
+
+          titleTextStyle: {
+            color: "#fff",
+            fontFamily: "Lato",
+            fontSize: 20,
+            bold: false,
+          },
+        };
+        var options4 = {
+          width: 500,
+          height: 400,
+          fontSize: 15,
+          backgroundColor: "transparent",
+          is3D: true,
+          legend: {
+            position: "bottom",
+            textStyle: {
+              color: "#fff",
+            },
+          },
+
+          titleTextStyle: {
+            align: "center",
+            color: "#fff",
+            fontFamily: "Lato",
+            fontSize: 20,
+            bold: false,
+          },
+        };
+
+        // Display the chart inside the <div> element with id="piechart"
+        var chart1 = new google.visualization.PieChart(
+          document.getElementById("piechart1")
+        );
+        chart1.draw(data1, options1);
+
+        var chart2 = new google.visualization.PieChart(
+          document.getElementById("piechart2")
+        );
+        chart2.draw(data2, options2);
+
+        var chart3 = new google.visualization.PieChart(
+          document.getElementById("piechart3")
+        );
+        chart3.draw(data3, options3);
+
+        var chart4 = new google.visualization.PieChart(
+          document.getElementById("piechart4")
+        );
+        chart4.draw(data4, options4);
+      }
+
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("myImg");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      };
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+    </script>
+  </body>
+</html>
